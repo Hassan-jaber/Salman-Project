@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+</head>
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="../index.html" class="logo">
+                            <h4>Lo<span>go</span></h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                             <li class="scroll-to-section"><a href="../index.html" class="active">Home</a></li>
+                            <li class="scroll-to-section">
+                                <div class="main-red-button"><a href="#">Register Now</a></div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+            <form id="contact" action="" method="post">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <fieldset>
+                            <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-4">
+                        <fieldset>
+                            <input type="text" name="mobile" id="mobile" placeholder="Mobile" autocomplete="on" required>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="radio-btns">
+                            <label class="radio-btn">
+                                <input type="radio" name="Female" checked>
+                                <span class="design"></span>
+                                <span class="text">Male</span>
+                            </label>
+                            
+                            <label class="radio-btn">
+                                <input type="radio" name="Female">
+                                <span class="design"></span>
+                                <span class="text">Female</span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                            <textarea name="message" type="text" class="form-control" id="message" placeholder="Message"
+                                required=""></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                            <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="contact-dec">
+                    <img src="assets/images/contact-decoration.png" alt="">
+                </div>
+            </form>
+</body>
+</html>
