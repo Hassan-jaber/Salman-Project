@@ -344,14 +344,14 @@ header
 
 .header-area .main-nav .nav li:last-child a ,
 .background-header .main-nav .nav li:last-child a {
-  color: #fff !important;
+  color: #fff;
   padding: 0px 20px;
   font-weight: 400;
 }
 
 .header-area .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:last-child a.active {
-  color: #fff !important;
+  color: #fff;
 }
 
 .header-area .main-nav .nav li a {
@@ -404,7 +404,16 @@ header
   right: 18px;
   top: 12px;
 }
-
+@media (max-width: 992px){
+.header-area .main-nav .nav li:last-child, .background-header .main-nav .nav li:last-child {
+    display:block !important;
+    color: #fe3f40 !important;
+    border-radius: 0px;
+}
+.main-red-button a{
+  border-radius: 0px;
+}
+}
 .background-header .main-nav .nav li.submenu:after {
   color: #2a2a2a;
 }
