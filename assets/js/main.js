@@ -1,9 +1,6 @@
-// scroll to top btn show/hide
-
-// back to top
 function backToTop() {
-  $("#back-to-top").on("click", function () {
-    $("#back-to-top").tooltip("hide");
+  document.getElementById("back-to-top").addEventListener("click", function () {
+    document.getElementById("back-to-top").classList.add("hide");
     $("body,html").animate(
       {
         scrollTop: 0,
@@ -16,8 +13,8 @@ function backToTop() {
 backToTop();
 
 function scrollTopBtn() {
-  var scrollToTop = $("#back-to-top"),
-    scroll = $(window).scrollTop();
+  let scrollToTop = document.getElementById("back-to-top"),
+    scroll = window.scrollTop();
   if (scroll >= 50) {
     scrollToTop.fadeIn();
   } else {

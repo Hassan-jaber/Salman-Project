@@ -1,5 +1,5 @@
 const counters = document.querySelectorAll(".value");
-const speed = 200;
+const speed = 1000;
 
 counters.forEach((counter) => {
   const animate = () => {
