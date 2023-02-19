@@ -1814,7 +1814,7 @@ responsive
 }
 .speakers .container{
   position: relative;
-  z-index: 9999;
+  z-index: 1;
 }
 .speakers::before{
     content: "";
