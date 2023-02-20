@@ -1,101 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Required meta tags-->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="register.css">
-    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Au Register Forms by Colorlib</title>
+
+    <!-- Icons font CSS-->
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="../assets/css/all.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS-->
+    <link href="register.css" rel="stylesheet" media="all">
 </head>
+
 <body>
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="../index.html" class="logo">
-                            <h4>Lo<span>go</span></h4>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                             <li class="scroll-to-section"><a href="../index.html" class="active">Home</a></li>
-                            <li class="scroll-to-section">
-                                <div class="main-red-button"><a href="#">Register Now</a></div>
-                            </li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="../index.html" class="logo">
+                        <h4>Lo<span>go</span></h4>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="../index.html" class="active">Home</a></li>
+                        <li class="scroll-to-section">
+                            <div class="main-red-button"><a href="#">Register Now</a></div>
+                        </li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+<!-- ***** form Start ***** -->
+    <div class="page-wrapper mt-5 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-body">
+                    <h2 class="title">Registration Info</h2>
+                    <form method="POST">
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Name" name="name">
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Mobile" name="mobile">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender">
+                                            <option disabled="disabled" selected="selected">Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="email" placeholder="Email" name="email">
+                        </div>
+                        <div class="row row-space">
+                            <textarea name="massage" class="input--style-2 message" placeholder="massage"></textarea>
+                        </div>
+                        <div class="p-t-30">
+                            <button class="btn btn--radius btn--green" type="submit">Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-            <form id="contact" action="" method="post">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <fieldset>
-                            <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                        </fieldset>
-                    </div>
-                    <div class="col-lg-4">
-                        <fieldset>
-                            <input type="text" name="mobile" id="mobile" placeholder="Mobile" autocomplete="on" required>
-                        </fieldset>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="radio-btns">
-                            <label class="radio-btn">
-                                <input type="radio" name="Female" checked>
-                                <span class="design"></span>
-                                <span class="text">Male</span>
-                            </label>
-                            
-                            <label class="radio-btn">
-                                <input type="radio" name="Female">
-                                <span class="design"></span>
-                                <span class="text">Female</span>
-                            </label>
-                        </div>
+    </div>
+<!-- ***** form End ***** -->
+    <!-- Jquery JS-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="../vendor/select2/select2.min.js"></script>
+    <script src="../vendor/datepicker/moment.min.js"></script>
+    <script src="../vendor/datepicker/daterangepicker.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/animation.js"></script>
+    <script src="../assets/js/imagesloaded.js"></script>
+    <script src="../assets/js/templatemo-custom.js"></script>
+    <!-- Main JS-->
+    <script src="../assets/js/global.js"></script>
 
-                    </div>
-                    <div class="col-lg-12">
-                        <fieldset>
-                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                        </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                        <fieldset>
-                            <textarea name="message" type="text" class="form-control" id="message" placeholder="Message"
-                                required=""></textarea>
-                        </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                        <fieldset>
-                            <button type="submit" id="form-submit" class="main-button ">Send Message</button>
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="contact-dec">
-                    <img src="assets/images/contact-decoration.png" alt="">
-                </div>
-            </form>
-            <!-- Scripts -->
-            <script src="../vendor/jquery/jquery.min.js"></script>
-            <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <script src="../assets/js/owl-carousel.js"></script>
-            <script src="../assets/js/animation.js"></script>
-            <script src="../assets/js/imagesloaded.js"></script>
-            <script src="../assets/js/templatemo-custom.js"></script>
-</body>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
 </html>
+<!-- end document-->
